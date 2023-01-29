@@ -5,4 +5,12 @@
 
     <button (click)="addTask(task.value)">Add Task</button>
 
+    <div>
+        <ul *ngFor="let data of list">
+            <li>{{data.id+1}}. {{data.name}} <button (click)="removeTask(data.id)" >Remove</button> </li>
+        </ul>
+
+    </div>
+
+
 </div>
